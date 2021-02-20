@@ -1,0 +1,38 @@
+
+.body-title{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #acacac;
+}
+
+.writing-area{
+    width: 60%;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.writing-area p{
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--blog-color);
+}
+
+.author{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 30px;
+}
+
+/********************* Footer ***********************/
+
+.footer{
+    height: 100px;
+}

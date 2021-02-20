@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    --primary-color:  #cae0f5;
+    --secondary-color: #0092f2;
+    --border-color: #70a1b8;
+    --blog-color: #242424;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Truculenta', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/***************** Header ********************/
+
+.header{
+    width: 100%;
+    height: 8vh;
+    border-bottom: 1px solid silver;
+}
+
+.header .container{
+    position: relative;
+    height: 100%;
+}
+
+.dark-mode-button{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    left: 0%;
+    cursor: pointer;
+}
+
+.dark-mode-button:hover{
+    text-shadow: 3px 1px 25px rgb(8, 30, 44);
+}
+
+.head-text{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%);
+    right: 50%;
+}
+
+.head-twitter{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+    transition: all 0.2s ease-in-out;
+}
+
+.head-twitter:hover{
+    color: #00acee;
+}
+
+
+/************************ Footer *********************/
+
+.footer{
+    background: var(--primary-color);
+    width: 100%;
+}
+
+.footer .container{
+    position: relative;
+    height: 100%;
+}
+
+.footer-container{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-area{
+    display: flex;
+}
+
+.message-area .text-area textarea{
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    resize: none;
+    overflow: hidden;
+}
+
+.message-area p{
+    font-size: 30px;
+    color: rgb(61, 83, 124);
+}
+
+.message-area .text-area input[type="button"]{
+    outline: none;
+    border: none;
+    width: 60px;
+    color:rgb(0, 61, 102);
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.message-area .text-area input[type="button"]:hover{
+    background: rgb(176, 210, 255);
+    cursor: pointer;
+}
+
+.profile-pic{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid rgb(88, 160, 255);
+    /* background-color: salmon; */
+}
+
+.profile-pic img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile-pic,
+.profile-id{
+    transition: all 0.15s ease-in-out;
+}
+
+.profile-pic:hover,
+.profile-id:hover{
+    color: rgb(90, 120, 160);
+    cursor: pointer;
+}
+

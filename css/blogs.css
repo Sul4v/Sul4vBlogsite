@@ -1,0 +1,62 @@
+/********************* Body ***********************/
+
+.body{
+    min-height: 500px;
+}
+
+.body-title{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #acacac;
+}
+
+.box-area{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* background: red; */
+}
+
+.box{
+    width: 280px;
+    height: 280px;
+    background: #E5EDF5;
+    margin: 0 40px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+    opacity: 0.9
+}
+
+.box-area .box:hover{
+    transform: translateY( -10px);
+    cursor: pointer;
+    border-color: var(--secondary-color);
+    background: #b1d6fa;
+    color: white;
+    opacity: 1;
+}
+
+.box img{
+    width: 150px;
+    height: 150px;
+}
+
+
+/********************* Footer ***********************/
+
+.footer{
+    height: 100px;
+}

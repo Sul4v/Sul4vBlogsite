@@ -1,0 +1,59 @@
+/********************* Body ***********************/
+
+.body{
+    min-height: 450px;
+    margin-bottom: 30px;
+}
+
+.body-title{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #acacac;
+}
+
+.book{
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 3px;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.book div{
+    margin-right: 50px;
+    min-width: 50px;
+}
+
+.number{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-title{
+    width: 500px; 
+}
+
+.book-author{
+    width: 300px;
+}
+
+.read-date{
+    width: 300px;
+}
+
+
+/********************* Footer ***********************/
+
+.footer{
+    height: 100px;
+}
