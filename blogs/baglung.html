@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,9 @@
     <!-- Header -->
     <section class="header">
         <div class="container">
-            <i class="fas fa-adjust dark-mode-button"></i>
+            <i class="fas fa-adjust dark-mode-button">
+                <input type="checkbox" name="theme" class="switch">
+            </i>
             <a href="../index.html" class="head-text">
                 Sul4v
             </a>
@@ -66,7 +68,7 @@
                 <div class="message-area">
                     <p>Message me</p>
                     <div class="text-area">
-                        <textarea name="" id="" cols="30" rows="1" placeholder="I'd really appreciate any feedback"></textarea>
+                        <textarea name="" id="" cols="30" rows="1" placeholder="This feature is currently unavailable"></textarea>
                         <input type="button" value="Send">
                     </div>  
                 </div>
@@ -84,5 +86,6 @@
         </div>
     </section>
 
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 }
 
 .box-area{
-    min-height: 350px;
+    min-height: 480px;
 }
 
 .box{
@@ -19,12 +19,12 @@
     min-height: 100px;
     margin: 0 auto;
     padding: 10px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .date{
     font-size: 1.6rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--primary-color);
     margin-bottom: 15px;
 }
 
@@ -35,5 +35,14 @@
 /********************* Footer ***********************/
 
 .footer{
-    height: 100px;
+    height: 120px;
+}
+
+
+/********************* Media Queries ***********************/
+
+
+@media (max-width: 770px){
+
+    
 }
