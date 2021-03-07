@@ -30,6 +30,7 @@
 .book div{
     margin-right: 50px;
     min-width: 50px;
+    overflow: hidden;
 }
 
 .number{
