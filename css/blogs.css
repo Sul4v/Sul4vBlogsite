@@ -20,7 +20,7 @@
     width: 100%;
     min-height: 360px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 10;
@@ -31,7 +31,7 @@
     width: 280px;
     height: 280px;
     background: var(--secondary-color);
-    margin: 0 40px 20px 40px;
+    margin: 0 40px 0 40px;
     border: 1px solid var(--tertiary-color);
     display: flex;
     flex-direction: column;
@@ -40,6 +40,8 @@
     transition: all 0.1s ease;
     opacity: 0.9
 }
+
+.bo
 
 .box-area .box:hover{
     transform: translateY( -10px);
@@ -63,6 +65,16 @@
 
 
 /********************* Media Queries ********************/
+
+@media (max-width: 800px){
+    .box-area{
+        flex-direction: column;
+    }
+    
+    .box{
+        margin-bottom: 8px;
+    }
+}
 
 @media (max-width: 500px){
     .box{
