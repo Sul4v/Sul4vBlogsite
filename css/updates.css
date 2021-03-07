@@ -18,12 +18,13 @@
     width: 90%;
     min-height: 100px;
     margin: 0 auto;
+    margin-bottom: 20px;
     padding: 10px;
     background: var(--secondary-color);
 }
 
 .date{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid var(--primary-color);
     margin-bottom: 15px;
 }
