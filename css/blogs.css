@@ -41,8 +41,6 @@
     opacity: 0.9
 }
 
-.bo
-
 .box-area .box:hover{
     transform: translateY( -10px);
     cursor: pointer;
