@@ -5,9 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
     font-size: 2.5rem;
     text-shadow: 2px 2px 5px #acacac;
+}
+
+.writing-area p a {
+    text-decoration: underline;
+}
+
+.writing-area p a:hover{
+    color: var(--quinary-color);
 }
 
 .writing-area{
@@ -22,6 +30,10 @@
     font-size: 1.3rem;
     font-family: 'Nunito', sans-serif;
     color: var(--blog-color);
+}
+
+.writing-area p strong{
+    font-size: 1.4em;
 }
 
 .author{
@@ -55,6 +67,10 @@
     .writing-area p{
         font-size: 1.1rem;
     }
+
+    .writing-area p strong{
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 550px){
@@ -76,5 +92,9 @@
 @media (max-width: 400px){
     .writing-area p{
         font-size: 1rem;
+    }
+
+    .writing-area p strong{
+        font-size: 1.2rem;
     }
 }
