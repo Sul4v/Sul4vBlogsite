@@ -36,6 +36,11 @@
     font-size: 1.4em;
 }
 
+.other-text{
+    background-color: var(--primary-color);
+    padding: 2%;
+}
+
 .author{
     position: absolute;
     right: 0%;
