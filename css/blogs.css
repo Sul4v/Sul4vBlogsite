@@ -67,7 +67,7 @@
 @media (max-width: 800px){
     .box-area{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
     .box{
