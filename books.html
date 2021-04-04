@@ -150,8 +150,10 @@
                 <div class="message-area">
                     <p>Message me</p>
                     <div class="text-area">
-                        <textarea name="" id="" cols="30" rows="1" placeholder="This feature is currently unavailable"></textarea>
-                        <input type="button" value="Send">
+                        <form action="POST" data-netlify="true">
+                            <textarea name="message" id="message" cols="30" rows="1" placeholder="Text me anonymously"></textarea>
+                            <input type="submit" value="Send">
+                        </form>
                     </div>  
                 </div>
 

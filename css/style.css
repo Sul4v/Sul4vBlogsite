@@ -125,16 +125,17 @@ body{
     align-items: center;
 }
 
-.text-area{
+.text-area form{
     display: flex;
 }
 
-.message-area .text-area textarea{
+.message-area .text-area form textarea{
     border: none;
     outline: none;
     font-size: 1.5em;
     resize: none;
     overflow: hidden;
+    padding: 0 3px;
 }
 
 .message-area p{
@@ -142,7 +143,7 @@ body{
     color: var(--quinary-color);
 }
 
-.message-area .text-area input[type="button"]{
+.message-area .text-area form input[type="submit"]{
     outline: none;
     border: none;
     width: 60px;
@@ -151,7 +152,7 @@ body{
     transition: all 0.2s ease-in-out;
 }
 
-.message-area .text-area input[type="button"]:hover{
+.message-area .text-area form input[type="submit"]:hover{
     background: var(--quinary-color);
     color: var(--secondary-color);
     cursor: pointer;
