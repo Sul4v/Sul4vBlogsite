@@ -26,6 +26,11 @@
     position: relative;
 }
 
+.writing-area img{
+    width: 80%;
+    
+}
+
 .writing-area p{
     font-size: 1.3rem;
     font-family: 'Nunito', sans-serif;
