@@ -34,22 +34,18 @@
 }
 
 .number{
-    height: 100%;
+    height: 100%;   
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .book-title{
-    width: 500px; 
+    width: 60%; 
 }
 
 .book-author{
-    width: 300px;
-}
-
-.read-date{
-    width: 300px;
+    width: 20%;
 }
 
 
