@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html{
+    --primary-color: #769fcd;
+    --secondary-color: #b9d7ea;
+    --tertiary-color: #8fbaf3;
+    --quaternary-color: #07689f;
+    --quinary-color: #163172;
+    --text-color: #000000;
+    --blog-color: #242424;
+
+    background-color: #f8f7f7;
+}
+
+html[data-theme="dark"]{
+    --primary-color: #0f4c75;
+    --secondary-color: #3282b8;
+    --tertiary-color: #8fbaf3;
+    --quaternary-color: #4f98ca;
+    --quinary-color: #70a1b8;
+    --text-color: #bbe1fa;
+    --blog-color: #edf7fa;
+
+    background-color: #010022;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 550ms  !important;
+  transition-delay: 0 !important;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Truculenta', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--neutral-color);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/***************** Header ********************/
+
+.header{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid silver;
+    color: var(--text-color);
+}
+
+.header .container{
+    /* position: relative; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark-mode-button{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dark-mode-button:hover{
+    text-shadow: 3px 1px 25px rgb(8, 30, 44);
+}
+
+.switch{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.head-text{
+    font-size: 3.5em;
+}
+
+.head-twitter{
+    font-size: 1.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.head-twitter:hover{
+    color: #00acee;
+}
+
+/* ********************** Body ************************/
+
+body{
+    color: var(--text-color);
+}
+
+/************************ Footer *********************/
+
+.footer{
+    background: var(--primary-color);
+    width: 100%;
+}
+
+.footer .container{
+    position: relative;
+    height: 100%;
+}
+
+.footer-container{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-area form{
+    display: flex;
+}
+
+.message-area .text-area form textarea{
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    resize: none;
+    overflow: hidden;
+    padding: 0 3px;
+}
+
+.message-area p{
+    font-size: 30px;
+    color: var(--quinary-color);
+}
+
+.message-area .text-area form input[type="submit"]{
+    outline: none;
+    border: none;
+    width: 60px;
+    color: var(--quinary-color);
+    font-size: 1.3em;
+    transition: all 0.2s ease-in-out;
+}
+
+.message-area .text-area form input[type="submit"]:hover{
+    background: var(--quinary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.profile-pic{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.profile-pic img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile-pic,
+.profile-id{
+    transition: all 0.15s ease-in-out;
+}
+
+.profile-pic:hover,
+.profile-id:hover{
+    color: var(--quaternary-color);
+    cursor: pointer;
+}
+
+
+
+/******************************* Media Queries ********************************/
+
+@media (max-width: 1024px){
+
+    .message-area p{
+        font-size: 25px;
+    }
+
+    .message-area .text-area textarea{
+        font-size: 1.3em;
+    }
+
+    .message-area .text-area input[type="button"]{
+        width: 50px;
+    }
+    
+    .profile-pic{
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-pic img{
+        width: 50px;
+        height: 50px;
+    }
+
+    
+}
+
+@media (max-width: 820px){
+    
+    
+}
+
+@media (max-width: 770px){
+
+    .head-text{
+        font-size: 3rem;
+    }
+
+    .footer{
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px){
+    .message-area p{
+        font-size: 1.5rem;
+    }
+
+    .message-area .text-area textarea{
+        font-size: 1.2em;
+    }
+
+    .message-area .text-area input[type="button"]{
+        font-size: 1.2em;
+    }
+
+    .profile-pic{
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-pic img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-id{
+        font-size: 0.9em;
+    }
+
+    .body-title{
+        margin: 130px 0 0px 0;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    .footer-container{
+        height: 100%;
+        padding-bottom: 10px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .message-area{
+        width: 90%;
+    }
+}
+
+
+
+/* --text-color: #000000;
+    --inverse-text-color: #ffffff;
+    --primary-color:  #cae0f5;
+    --secondary-color: #0092f2;
+    --background-color: #ffffff;
+    --border-color: #70a1b8;
+    --blog-color: #242424;
+
+    background: white; */

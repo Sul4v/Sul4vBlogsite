@@ -1,0 +1,110 @@
+
+.body-title{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #acacac;
+}
+
+.writing-area p a {
+    text-decoration: underline;
+}
+
+.writing-area p a:hover{
+    color: var(--quinary-color);
+}
+
+.writing-area{
+    width: 60%;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.writing-area img{
+    width: 80%;
+    
+}
+
+.writing-area p{
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--blog-color);
+}
+
+.writing-area p strong{
+    font-size: 1.4em;
+}
+
+.other-text{
+    background-color: var(--primary-color);
+    padding: 2%;
+}
+
+.author{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 30px;
+}
+
+/********************* Footer ***********************/
+
+.footer{
+    height: 100px;
+}
+
+
+/********************* Media Queries ***********************/
+
+@media (max-width: 1100px){
+    .writing-area{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px){
+    .writing-area{
+        width: 90%;
+    }
+
+    .writing-area p{
+        font-size: 1.1rem;
+    }
+
+    .writing-area p strong{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 550px){
+    .writing-area{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .body-title{
+        font-size: 2rem;
+    }
+
+    .footer{
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px){
+    .writing-area p{
+        font-size: 1rem;
+    }
+
+    .writing-area p strong{
+        font-size: 1.2rem;
+    }
+}

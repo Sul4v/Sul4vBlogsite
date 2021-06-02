@@ -1,0 +1,74 @@
+
+.body-title{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #acacac;
+}
+
+.box-area{
+    min-height: 480px;
+}
+
+.box{
+    width: 90%;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: var(--secondary-color);
+}
+
+.date{
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.description{
+    font-size: 2rem;
+}
+
+/********************* Footer ***********************/
+
+.footer{
+    height: 120px;
+}
+
+
+/********************* Media Queries ***********************/
+
+
+@media (max-width: 600px){
+
+    .body-title{
+        font-size: 2.3rem;
+    }
+    
+    .date{
+        font-size: 1.3rem;
+    }
+
+    .description{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    .body-title{
+        font-size: 2.1rem;
+    }
+    
+    .date{
+        font-size: 1.1rem;
+    }
+
+    .description{
+        font-size: 1.5rem;
+    }
+}
